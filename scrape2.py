@@ -28,6 +28,7 @@ def scrap_js():
         data = get_js(i)
         for disaster in data:
             disasters.append({
+                "name" : disaster["name_vn"],
                 "kv_anhhuong" : disaster["kv_anhhuong"],
                 "time_start" : disaster["time_start"],
                 "lon" : disaster["lon"],
@@ -44,7 +45,7 @@ def scrap_js():
 def to_csv_js(disasters):
     file = "disasters_2.csv"
     with open(file, 'w') as csvfile:
-        fieldname = ["kv_anhhuong", "time_start", "lon", "lat", "level", "disaster_level", "type"]
+        fieldname = ["name", "kv_anhhuong", "time_start", "lon", "lat", "level", "disaster_level", "type"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldname)
 
         writer.writeheader()
