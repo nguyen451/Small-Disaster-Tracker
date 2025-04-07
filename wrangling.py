@@ -13,6 +13,21 @@ def clean_data() -> None:
     print("Total missing values: ")
     print(df.isna().sum())
 
+    print("Records where start date is missing: ")
+    print(df[df["start_date"].isna()])
+
+    print("Records where end_date is missing: ")
+    print(df[df["end_date"].isna()])
+
+    print("Records where influence_area is missing: ")
+    print(df[df["influence_area"].isna()])
+
+    # There is disaster call "Tin khan cap can bao so 4" which has lost of missing value
+    # I searched on the internet and see that there is a typhoon call Noru - typhoon number 4
+    print(df[df["name"].str.contains("4")])
+    # the rows "TIN KHAN CAP CON BAO SO 4 is all missing value so I'll delete it"
+    
+
     
 
 

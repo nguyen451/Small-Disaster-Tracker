@@ -3,7 +3,7 @@ import requests
 import csv
 import os
 
-def get_page_text(page: int):   # return html for each page
+def get_page_1_text(page: int):   # return html for each page
     url = f"http://www.dmc.gov.vn/Ajax.aspx?ctrl=/Modules/DMC/Web/ListDisasterContent&keyword=&typeid=0&startdate=&enddate=&lang=vi-VN&cPage={page}"
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
@@ -12,7 +12,7 @@ def get_page_text(page: int):   # return html for each page
         return response.text
     return None
 
-def scrape_disaster_data():
+def scrape_disaster_data_1():
     url = "http://www.dmc.gov.vn/thong-tin-thien-tai-pt32.html?lang=vi-VN"
     response = requests.get(url)
     # check if the web is available
@@ -41,7 +41,7 @@ def scrape_disaster_data():
                 })
     return disasters
 
-def to_csv(disasters):
+def to_csv_1(disasters):
     file = "disasters.csv"
     with open(file, 'w') as csvfile:
         fieldname = ["name", "type", "start_date", "end_date", "influence_area"]
@@ -50,5 +50,5 @@ def to_csv(disasters):
         writer.writeheader()
         writer.writerows(disasters)
 
+to_csv_1(scrape_disaster_data_1)
 
-to_csv(scrape_disaster_data())
