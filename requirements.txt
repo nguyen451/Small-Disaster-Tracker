@@ -3,4 +3,3 @@ requests
 pandas
 csv # no need to install because already go with Python
 os
-json
