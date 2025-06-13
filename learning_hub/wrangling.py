@@ -28,7 +28,5 @@ def clean_data() -> None:
     # the rows "TIN KHAN CAP CON BAO SO 4 is all missing value so I'll delete it"
     
 
-    
-
-
-clean_data()
+if __name__ == "__main__":
+    clean_data()
