@@ -4,18 +4,17 @@ from geopy.exc import GeocoderServiceError
 import re
 import unicodedata
 
-def transform(csvfilename : str):
-    df = pd.read_csv(csvfilename)
-    
+def transform(inputfile : str, outfile : str) -> pd.DataFrame:
+    df = pd.read_csv(inputfile)
     clean(df)
+    df = field_edit(df)
 
-    field_edit(df)
-
-    df.to_csv("proper_data.csv")
+    df.to_csv(outfile)
 
     return df
 
-def clean(df) -> None:
+
+def clean(df : pd.DataFrame) -> None:
     df.drop_duplicates(inplace=True)
     df.drop(columns=["disaster_level"], inplace=True) # "kv_anhhuong", 
     df.dropna(subset=["name"], inplace=True)
@@ -29,7 +28,7 @@ def clean(df) -> None:
     df["name"] = df["name"].str.strip()
 
 
-def field_edit(df) -> None:
+def field_edit(df : pd.DataFrame) -> None:
     provinces_and_east_Sea = [
     "An Giang", "Ba Ria - Vung Tau", "Bac Lieu", "Bac Giang", "Bac Kan",
     "Bac Ninh", "Ben Tre", "Binh Duong", "Binh Đinh", "Binh Phuoc",
@@ -50,27 +49,28 @@ def field_edit(df) -> None:
     filtered = [prov in provinces_and_east_Sea for prov in df["province"]]
     filtered = df[filtered]
     filtered.drop(columns=["kv_anhhuong"], inplace=True)
+    return filtered
 
 
-def remove_accents(text : str) -> str:
+def remove_accents(text : str) -> str:#                                       test
     nfkd = unicodedata.normalize('NFKD', text)
     return ''.join([c for c in nfkd if not unicodedata.combining(c)])
 
 
-def normalize_text(text : str) -> str:
+def normalize_text(text : str) -> str: #                                      test        
     text = re.sub(r"\s+", " ", text.strip())
     text = remove_accents(text)
     text = text.title()
     return text
 
 
-def extract_province2(kv_anhhuong) -> str:
+def extract_province2(kv_anhhuong) -> str: #                                  test
     mat = re.search(r"tỉnh\s*(.*)", kv_anhhuong, re.IGNORECASE)
     if mat:
         return normalize_text(mat.group(1))
     
     mat = re.search(r"Tp\.*\s*(.*)", kv_anhhuong, re.IGNORECASE)
-    if mat:
+    if mat: 
         return normalize_text(mat.group(1))
     
     mat = re.search(r"Thành Phố\s*(.*)", kv_anhhuong, re.IGNORECASE)

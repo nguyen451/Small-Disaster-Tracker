@@ -15,7 +15,7 @@ def get_js(year: int):              #____________________________________test th
     
     # else raise exception
 
-def scrap_js():
+def scrap_js(outfile : str) -> None:
     # get data from year_start to year_stop
     start = 2022
     stop = 2026
@@ -36,11 +36,11 @@ def scrap_js():
                 "type" : disaster["disaster"]["name_disaster"]
             })
 
-    to_csv_js(disasters)
+    to_csv_js(disasters, outfile)
 
 
-def to_csv_js(disasters):  #_____________________________________________FILE NOT FOUND_____________________________________________
-    file = "disaster_2.csv"
+def to_csv_js(disasters : dict, outfile : str) -> None:  #_____________________________________________FILE NOT FOUND_____________________________________________
+    file = outfile
     with open(file, 'w') as csvfile:
         fieldname = ["name", "kv_anhhuong", "time_start", "lon", "lat", "level", "disaster_level", "type"]
         writer = csv.DictWriter(csvfile, fieldnames= fieldname)
