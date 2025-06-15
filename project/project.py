@@ -4,6 +4,7 @@ import os
 import sqlite3
 import unicodedata
 import re
+from prettytable import from_db_cursor
 
 
 def main():
@@ -21,6 +22,9 @@ def main():
         if refresh == "1":
             get_data(datafile, rawdata)
 
+    # connect to the database
+    cnn = sqlite3.connect('vieDisasters.db')
+    db = cnn.cursor()
     
     # run the application:
     while True:
@@ -32,13 +36,58 @@ def main():
 
         match choice:
             case 1: 
-                vie_disasters(datafile)    
+                # disaster by type:
+                print("Disaster by types: ")
+                order = int(input("Press 0 for ascending, 1 for descending order: "))
+                dsbt = dst_by_type(db,"vie", order)
+                print(from_db_cursor(dsbt))
+
+                # print most freq disaster
+                print("Most freq disaster: ")
+                print(most_freq_dst(db,"vie"))
+
+                # disaster by province
+                print("Disaster by prov: ")
+                while True:
+                    try:
+                        limit = int(input("Output limitation (press 0 for all results display): "))
+                        prov = input("Province: ")
+                        order = int(input("Press 0 for ascending, 1 for descending order: "))
+                        dsbp = dst_by_prov(db, limit, prov, order)
+                        print(from_db_cursor(dsbp))
+                    except ValueError:
+                        print("Invalid prompt, please try again")
+                        continue
+
+                # disaster trends
+                disaster_trends(db, "vie")
             case 2:
-                prov_disasters(datafile)
+                while True:
+                    try: 
+                        print("Province format example: Quang Ninh, Đien Bien")
+                        prov = input("Province (one province only): ")
+                        # disaster by type
+                        print("Disaster by types: ")
+                        order = int(input("Press 0 for ascending, 1 for descending order: "))
+                        dsbt = dst_by_type(db, prov, order)
+                        print(from_db_cursor(dsbt))
+
+                        # print most freq disaster
+                        print("Most freq disaster: ")
+                        print(most_freq_dst(db, prov))
+
+                        # print disaster trends
+                        disaster_trends(db, prov)
+                    except ValueError:
+                        print("Invalid input")
+                        continue
+
             case 3:
                 break
             case _:
                 print("Invalid choice")
+
+    cnn.close()
 
 
 def get_data(datafile : str, rawdatafile : str) -> None:
@@ -142,12 +191,43 @@ def extract_province2(kv_anhhuong) -> str: #                                  te
     return normalize_text(kv_anhhuong)
 
  
-def vie_disasters(datafile : str):
-    return
+def dst_by_type(db : sqlite3.Cursor, prov : str, order : int):
+    if prov == "vie":
+        if order == 1:
+            db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" GROUP BY "type" ORDER BY "count" DESC')
+        else:
+            db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" GROUP BY "type" ORDER BY "count"')
+    else :
+        provinces_and_east_Sea = [
+        "An Giang", "Ba Ria - Vung Tau", "Bac Lieu", "Bac Giang", "Bac Kan",
+        "Bac Ninh", "Ben Tre", "Binh Duong", "Binh Đinh", "Binh Phuoc",
+        "Binh Thuan", "Ca Mau", "Cao Bang", "Can Tho", "Đa Nang",
+        "Đak Lak", "Đak Nong", "Đien Bien", "Đong Nai", "Đong Thap",
+        "Gia Lai", "Ha Giang", "Ha Nam", "Ha Noi", "Ha Tinh",
+        "Hai Duong", "Hai Phong", "Hau Giang", "Hoa Binh", "Hung Yen",
+        "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lang Son",
+        "Lao Cai", "Lam Đong", "Long An", "Nam Dinh", "Nghe An",
+        "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh",
+        "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang",
+        "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa",
+        "Thua Thien Hue", "Tien Giang", "TP. Ho Chi Minh", "Tra Vinh", "Tuyen Quang",
+        "Vinh Long", "Vinh Phuc", "Yen Bai", "Bien Đong"
+        ]
+        if not prov in provinces_and_east_Sea:
+            raise ValueError
+        else:
+            if order == 1:
+                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count" DESC', prov)
+            else:
+                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count"', prov)
+
+    res = db.fetchall()
+    return res
 
 
-def prov_disasters(datafile : str):
+def most_freq_dst(db : sqlite3.Cursor, prov : str):
     return
+        
 
 if __name__ == "__main__":
     main()
