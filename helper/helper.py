@@ -1,5 +1,6 @@
 import requests
 import csv
+from prettytable import PrettyTable
 
 def get_js(year: int):              #____________________________________test throw exceptions__________________________________
     """
@@ -23,3 +24,12 @@ def to_csv_js(disasters : dict, outfile : str) -> None:  #______________________
 
         writer.writeheader()
         writer.writerows(disasters)
+
+
+def make_and_print_table(rows : list, fields : list):
+    tb = PrettyTable()
+    tb.field_names = fields
+    for row in rows:
+        tb.add_row([row[i] for i in range(len(row))])
+    
+    print(tb)

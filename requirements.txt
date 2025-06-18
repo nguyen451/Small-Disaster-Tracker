@@ -1,5 +1,5 @@
-beautifulsoup4
+matplotlib
 requests
 pandas
-csv # no need to install because already go with Python
-os
+prettytable
+seaborn

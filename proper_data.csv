@@ -72,7 +72,6 @@
 73,Sạt lở đất tại Cà Mau,2022-03-18,105.415602,9.030535,0,Sạt lở đất,Ca Mau
 74,"Mưa lớn, ngập úng, lốc, sạt lở đất tại Cao Bằng",2022-03-22,105.800057,22.599584,0,Mưa lớn,Cao Bang
 75,Mưa lớn tại Cà Mau,2022-03-21,105.3404043078239,9.015370579373338,0,Mưa lớn,Ca Mau
-76,Lốc tại Cà Mau,1899-12-24,104.819054,8.870442,0,Lốc,Ca Mau
 77,Mưa lớn tại Tuyên Quang,2022-06-28,105.424026,22.371489,0,Mưa lớn,Tuyen Quang
 78,Sạt lở đê tại An Giang,2022-04-15,105.150241,10.51589,0,Sạt lở đất,An Giang
 80,Sạt lở đê tại An Giang,2022-04-15,105.152264,10.526086,0,Sạt lở đất,An Giang
@@ -1896,227 +1895,228 @@
 2421,Ngập lụt tại Trà Vinh,2025-01-16,106.251763,10.063804,0,Ngập lụt,Tra Vinh
 2422,Lốc tại Lào Cai,2025-04-12,104.29280291531902,22.53817127109621,0,Lốc,Lao Cai
 2423,Sụt lún đất tại Trà Vinh,2025-01-27,106.563228,9.743079,0,Sụt lún đất,Tra Vinh
-2424,Động đất tại Kon Tum,2025-01-24,108.164,14.844,0,Động đất,Kon Tum
-2425,Lũ tại Hoà Bình,2025-06-03,105.44359045744613,20.71613012185897,0,Lũ,Hoa Binh
-2426,Động đất tại Kon Tum,2025-01-27,108.368,14.828,0,Động đất,Kon Tum
-2427,Động đất tại Kon Tum,2025-01-09,108.166,14.971,0,Động đất,Kon Tum
-2428,Mưa kèm theo dông lốc tại Đồng Tháp,2025-03-17,105.41629266098954,10.63069185649334,0,Lốc,Đong Thap
-2429,Động đất tại Kon Tum,2025-01-27,108.25,14.86,0,Động đất,Kon Tum
-2430,Dông lốc tại Long An,2025-06-02,106.600158,10.5803,0,"Dông lốc, sét, mưa đá",Long An
-2431,Động đất tại Kon Tum,2025-02-02,108.233,14.871,0,Động đất,Kon Tum
-2432,Rét hại tại Sơn La,2025-02-06,103.731643,20.837864,0,Rét hại,Son La
-2433,Sạt lở đất tại Cà Mau,2025-02-24,105.257335,8.774532,0,Sạt lở đất,Ca Mau
-2434,Động đất tại Quảng Nam,2025-01-27,108.183,15.141,0,Động đất,Quang Nam
-2435,Dông lốc tại Đồng Tháp,2025-06-03,105.552,10.5744,0,"Dông lốc, sét, mưa đá",Đong Thap
-2436,Sạt lở đất tại Vĩnh Long,2025-01-29,105.94008,9.991251,0,Sạt lở đất,Vinh Long
-2437,Động đất tại Quảng Nam,2025-06-09,108.084,15.028,0,Động đất,Quang Nam
-2439,Động đất tại Kon Tum,2025-01-05,108.179,14.949,0,Động đất,Kon Tum
-2440,Động đất tại Kon Tum,2025-01-10,108.289,14.909,0,Động đất,Kon Tum
-2441,Động đất tại Kon Tum,2025-01-04,108.309,14.67,0,Động đất,Kon Tum
-2442,Động đất tại Kon Tum,2025-05-26,108.168,14.993,0,Động đất,Kon Tum
-2443,Động đất tại Kon Tum,2025-02-02,108.257,14.803,0,Động đất,Kon Tum
-2444,Sạt lở đất tại Hậu Giang,2025-02-03,105.772402,9.867015,0,Sạt lở đất,Hau Giang
-2446,Động đất tại Quảng Nam,2025-05-26,108.123,15.052,0,Động đất,Quang Nam
-2447,Động đất tại Hà Nội,2025-02-03,105.582,20.86,0,Động đất,Ha Noi
-2448,Động đất tại Quảng Nam,2025-05-26,108.106,15.067,0,Động đất,Quang Nam
-2449,Động đất tại Kon Tum,2025-01-12,108.147,14.903,0,Động đất,Kon Tum
-2450,"Mưa lớn, ngập lụt tại Hà Tĩnh",2025-05-24,105.929309,18.22223,0,Ngập lụt,Ha Tinh
-2451,Mưa lớn tại Lai Châu,2025-06-07,103.66355,22.194,0,Mưa lớn,Lai Chau
-2452,Động đất tại Kon Tum,2025-01-31,108.236,14.851,0,Động đất,Kon Tum
-2453,Động đất tại Kon Tum,2025-05-25,108.153,15.029,0,Động đất,Kon Tum
-2454,Động đất tại Quảng Nam,2025-01-30,108.21,15.15,0,Động đất,Quang Nam
-2455,Động đất tại Kon Tum,2025-02-01,108.206,14.839,0,Động đất,Kon Tum
-2456,Rét hại tại Sơn La,2025-01-13,104.008064,21.154254,0,Rét hại,Son La
-2457,Động đất tại Quảng Nam,2025-05-25,108.138,15.021,0,Động đất,Quang Nam
-2458,Mưa lớn tại Lào Cai,2025-06-07,104.120437,22.76313,0,Mưa lớn,Lao Cai
-2459,Động đất tại Kon Tum,2025-05-25,108.178,14.998,0,Động đất,Kon Tum
-2461,Sét tại Nghệ An,2025-06-07,104.694,19.588,0,Sét,Nghe An
-2462,Động đất tại Kon Tum,2025-02-07,108.203,14.877,0,Động đất,Kon Tum
-2463,Động đất tại Kon Tum,2025-02-07,108.168,14.865,0,Động đất,Kon Tum
-2464,Động đất tại Kon Tum,2025-02-07,108.149,14.865,0,Động đất,Kon Tum
-2465,Động đất tại Kon Tum,2025-05-25,108.269,14.944,0,Động đất,Kon Tum
-2467,Động đất tại Kon Tum,2025-02-07,108.328,14.868,0,Động đất,Kon Tum
-2468,Động đất tại Kon Tum,2025-02-08,108.158,14.924,0,Động đất,Kon Tum
-2469,Động đất tại Kon Tum,2025-02-10,108.245,14.868,0,Động đất,Kon Tum
-2470,Động đất tại Kon Tum,2025-05-25,108.154,15.001,0,Động đất,Kon Tum
-2471,Động đất tại Kon Tum,2025-02-15,108.261,14.773,0,Động đất,Kon Tum
-2472,Động đất tại Quảng Nam,2025-02-15,108.075,15.098,0,Động đất,Quang Nam
-2473,Mưa lớn tại Cao Bằng,2025-05-23,105.584,22.904,0,Mưa lớn,Cao Bang
-2474,Mưa lớn tại Hà Giang,2025-05-20,104.94499,22.49777,0,Mưa lớn,Ha Giang
-2475,Động đất tại Kon Tum,2025-02-17,108.184,14.9,0,Động đất,Kon Tum
-2476,Động đất tại Quảng Nam,2025-05-25,108.153,14.988,0,Động đất,Quang Nam
-2477,Động đất tại Kon Tum,2025-05-23,108.389,14.736,0,Động đất,Kon Tum
-2478,Động đất tại Kon Tum,2025-02-17,108.186,14.896,0,Động đất,Kon Tum
-2479,Động đất tại Kon Tum,2025-02-18,108.173,14.962,0,Động đất,Kon Tum
-2480,Động đất tại Quảng Nam,2025-02-18,108.112,15.087,0,Động đất,Quang Nam
-2481,Động đất tại Quảng Nam,2025-05-26,108.129,15.023,0,Động đất,Quang Nam
-2482,Động đất tại Kon Tum,2025-05-23,108.382,14.719,0,Động đất,Kon Tum
-2483,Động đất tại Kon Tum,2025-02-19,108.157,14.874,0,Động đất,Kon Tum
-2484,Động đất tại Quảng Nam,2025-05-26,108.125,15.03,0,Động đất,Quang Nam
-2485,Động đất tại Quảng Nam,2025-02-19,108.102,15.07,0,Động đất,Quang Nam
-2486,Động đất tại Kon Tum,2025-02-19,108.208,14.822,0,Động đất,Kon Tum
-2487,Động đất tại Kon Tum,2025-05-26,108.229,14.923,0,Động đất,Kon Tum
-2488,Động đất tại Quảng Ngãi,2025-02-22,108.045,15.196,0,Động đất,Quang Nam
-2489,Động đất tại Kon Tum,2025-05-25,108.153,14.869,0,Động đất,Kon Tum
-2490,Động đất tại Kon Tum,2025-03-02,108.282,14.861,0,Động đất,Kon Tum
-2491,Động đất tại Kon Tum,2025-03-02,108.308,14.816,0,Động đất,Kon Tum
-2492,Động đất tại Quảng Nam,2025-03-02,108.213,15.209,0,Động đất,Quang Nam
-2493,Động đất tại Kon Tum,2025-05-27,108.23,14.964,0,Động đất,Kon Tum
-2494,Động đất tại Quảng Nam,2025-02-25,108.08,15.219,0,Động đất,Quang Nam
-2495,Động đất tại Quảng Nam,2025-02-24,108.078,15.178,0,Động đất,Quang Nam
-2496,Động đất tại Kon Tum,2025-02-19,108.162,14.872,0,Động đất,Kon Tum
-2497,Động đất tại Kon Tum,2025-05-27,108.19,14.984,0,Động đất,Kon Tum
-2498,Động đất tại Kon Tum,2025-03-06,108.165,14.938,0,Động đất,Kon Tum
-2499,Động đất tại Kon Tum,2025-03-08,108.185,14.838,0,Động đất,Kon Tum
-2500,Động đất tại Kon Tum,2025-03-06,108.063,15.185,0,Động đất,Kon Tum
-2501,Động đất tại Kon Tum,2025-03-06,108.162,14.924,0,Động đất,Kon Tum
-2502,Động đất tại Kon Tum,2025-05-27,108.197,14.975,0,Động đất,Kon Tum
-2503,Động đất tại Kon Tum,2025-03-13,108.315,14.756,0,Động đất,Kon Tum
-2504,Động đất tại Kon Tum,2025-03-31,108.282,14.847,0,Động đất,Kon Tum
-2505,Sạt lở đất tại Bạc Liêu,2025-03-12,105.73467,9.228062,0,Sạt lở đất,Bac Lieu
-2506,Động đất tại Kon Tum,2025-03-30,108.178,14.955,0,Động đất,Kon Tum
-2507,Động đất tại Kon Tum,2025-03-31,108.262,14.849,0,Động đất,Kon Tum
-2508,Động đất tại Kon tum,2025-05-27,108.158,15.014,0,Động đất,Kon Tum
-2509,Động đất tại Kon Tum,2025-03-18,108.175,14.954,0,Động đất,Kon Tum
-2510,Động đất tại Kon Tum,2025-03-18,108.158,14.953,0,Động đất,Kon Tum
-2511,Động đất tại Kon Tum,2025-03-18,108.23,14.978,0,Động đất,Kon Tum
-2512,Sạt lở đất tại Hậu Giang,2025-02-02,105.770024,9.865383,0,Sạt lở đất,Hau Giang
-2513,Động đất tại Kon Tum,2025-03-20,108.198,14.865,0,Động đất,Kon Tum
-2514,Động đất tại Kon Tum,2025-05-27,108.19,14.996,0,Động đất,Kon Tum
-2515,Động đất tại Kon Tum,2025-03-21,108.262,14.773,0,Động đất,Kon Tum
-2516,Mưa lớn kèm theo dông lốc tại Tiền Giang,2025-02-18,106.12644733645898,10.376702167251553,0,Lốc,Tien Giang
-2517,Động đất tại Quảng Nam,2025-03-22,108.102,14.997,0,Động đất,Quang Nam
-2518,Động đất tại Kon Tum,2025-05-27,108.165,14.983,0,Động đất,Kon Tum
-2519,Động đất tại Kon Tum,2025-03-25,108.203,14.801,0,Động đất,Kon Tum
-2520,Động đất tại Kon Tum,2025-03-25,108.25,14.76,0,Động đất,Kon Tum
-2521,Động đất tại Kon Tum,2025-03-25,108.27,14.818,0,Động đất,Kon Tum
-2522,Ngập lụt tại Quảng Trị,2025-05-25,107.24868195201744,16.716965146235783,0,Ngập lụt,Quang Tri
-2524,Động đất tại Kon Tum,2025-03-27,108.241,14.57,0,Động đất,Kon Tum
-2525,Động đất tại Kon Tum,2025-03-27,108.2303,14.589,0,Động đất,Kon Tum
-2526,Động đất tại Kon Tum,2025-05-27,108.184,14.985,0,Động đất,Kon Tum
-2527,Động đất tại Kon Tum,2025-05-28,108.197,14.98,0,Động đất,Kon Tum
-2528,Động đất tại Kon Tum,2025-03-28,108.265,14.659,0,Động đất,Kon Tum
-2529,Động đất tại Kon Tum,2025-03-31,108.189,14.989,0,Động đất,Kon Tum
-2530,Động đất tại Quảng Nam,2025-05-28,108.126,15.023,0,Động đất,Quang Nam
-2531,Động đất tại Kon Tum,2025-03-31,108.226,14.845,0,Động đất,Kon Tum
-2532,Động đất tại Kon Tum,2025-04-07,108.247,14.86,0,Động đất,Kon Tum
-2533,Động đất tại Quảng Nam,2025-05-28,108.154,14.994,0,Động đất,Quang Nam
-2534,Động đất tại Kon Tum,2025-04-07,108.271,14.814,0,Động đất,Kon Tum
-2535,Động đất tại Kon Tum,2025-04-05,108.274,14.758,0,Động đất,Kon Tum
-2536,Động đất tại Kon Tum,2025-04-05,108.238,14.808,0,Động đất,Kon Tum
-2537,Động đất tại Kon Tum,2025-05-28,108.159,14.994,0,Động đất,Kon Tum
-2538,Động đất tại Kon Tum,2025-04-04,108.26,14.773,0,Động đất,Kon Tum
-2539,Động đất tại Kon Tum,2025-04-04,108.204,14.829,0,Động đất,Kon Tum
-2540,Động đất tại Kon Tum,2025-04-04,108.241,14.783,0,Động đất,Kon Tum
-2541,Động đất tại Kon Tum,2025-05-28,108.17,14.987,0,Động đất,Kon Tum
-2542,Động đất tại Kon Tum,2025-05-28,108.157,14.999,0,Động đất,Kon Tum
-2543,Động đất tại Kon Tum,2025-04-09,108.299,14.781,0,Động đất,Kon Tum
-2544,Sét tại Bình Thuận,2025-05-28,108.173547,11.054926,0,Sét,Binh Thuan
-2545,Động đất tại Kon Tum,2025-04-14,108.391,14.671,0,Động đất,Kon Tum
-2546,Động đất tại Kon Tum,2025-04-14,108.131,15.189,0,Động đất,Kon Tum
-2547,Sạt lở đất tại An Gang,2025-05-29,105.262123,10.559218,0,Sạt lở đất,An Giang
-2548,Động đất tại Kon tum,2025-05-30,108.275,14.839,0,Động đất,Kon Tum
-2549,Động đất tại Kon Tum,2025-05-30,108.294,14.826,0,Động đất,Kon Tum
-2550,Động đất tại Quảng Nam,2025-06-01,108.151,14.991,0,Động đất,Quang Nam
-2551,Động đất tại Quảng Nam,2025-06-02,108.084,15.029,0,Động đất,Quang Nam
-2552,Lốc tại Quảng Nam,2025-04-22,107.26759,15.762727,0,Lốc,Quang Nam
-2553,Động đất tại Kon Tum,2025-04-15,108.235,14.864,0,Động đất,Kon Tum
-2554,Động đất tại Kon Tum,2025-04-16,108.162,14.962,0,Động đất,Kon Tum
-2555,Mưa lớn tại Quảng Bình,2025-04-14,106.30200155936734,17.769183660214388,0,Mưa lớn,Quang Binh
-2556,Động đất tại Kon Tum,2025-04-17,108.282,14.915,0,Động đất,Kon Tum
-2557,Động đất tại Kon Tum,2025-04-13,108.29,14.854,0,Động đất,Kon Tum
-2558,Động đất tại Kon Tum,2025-06-09,108.286,14.943,0,Động đất,Kon Tum
-2559,Động đất tại Kon Tum,2025-04-19,108.215,14.844,0,Động đất,Kon Tum
-2560,Sét tại Hà Tĩnh,2025-05-29,105.5898,18.2588,0,Sét,Ha Tinh
-2561,Mưa đá kèm lốc xoáy tại Lâm Đồng,2025-04-14,107.73728968193184,11.475353341962927,0,"Dông lốc, sét, mưa đá",Lam Đong
-2562,Động đất tại Quảng Nam,2025-05-31,108.151,14.991,0,Động đất,Quang Nam
-2563,Động đất tại Kon Tum,2025-04-20,108.175,15.011,0,Động đất,Kon Tum
-2564,Động đất tại Quảng Nam,2025-04-21,108.094,15.137,0,Động đất,Quang Nam
-2565,Động đất tại Kon Tum,2025-04-22,108.224,14.809,0,Động đất,Kon Tum
-2566,Mưa dông kèm lốc xoáy tại Lâm Đồng,2025-04-14,107.51180662159413,11.405231253410644,0,"Dông lốc, sét, mưa đá",Lam Đong
-2567,Động đất tại Kon Tum,2025-04-23,108.312,14.75,0,Động đất,Kon Tum
-2569,"Dông lốc, sét, mưa đá tại Nghệ An",2025-04-22,105.33661,18.793983,0,"Dông lốc, sét, mưa đá",Nghe An
-2570,Lốc tại Quảng Trị,2025-04-22,107.085115,15.73255,0,Lốc,Quang Tri
-2571,Động đất tại Kon Tum,2025-05-31,108.295,14.778,0,Động đất,Kon Tum
-2572,Lốc tại Nghệ An,2025-06-08,105.041,18.942,0,Lốc,Nghe An
-2573,"Dông, sét, lốc tại Hà Giang",2025-04-24,105.407123,23.164839,0,"Dông lốc, sét, mưa đá",Ha Giang
-2574,Động đất tại Kon Tum,2025-04-26,108.163,14.957,0,Động đất,Kon Tum
-2575,Lốc tại Nghệ An,2025-04-23,104.1382,19.5318,0,Lốc,Nghe An
-2576,Động đất tại Kon Tum,2025-06-02,108.16,14.892,0,Động đất,Kon Tum
-2577,Động đất tại Kon Tum,2025-06-02,108.168,14.844,0,Động đất,Kon Tum
-2578,Động đất tại Kon Tum,2025-04-26,108.151,14.949,0,Động đất,Kon Tum
-2579,Động đất tại Kon Tum,2025-04-26,108.171,14.957,0,Động đất,Kon Tum
-2580,"Dông, lốc tại Gia Lai",2025-04-25,108.68966,13.34375,0,"Dông lốc, sét, mưa đá",Gia Lai
-2581,Sét tại Bình Định,2025-05-11,108.963436,13.92769,0,Sét,Binh Đinh
-2582,"Dông lốc, sét, mưa đá tại Sơn La",2025-04-26,103.60898,21.19055,0,"Dông lốc, sét, mưa đá",Son La
-2583,Mưa lớn tại An Giang,2025-04-25,105.2213,10.7795,0,Mưa lớn,An Giang
-2584,Mưa lớn tại An Giang,2025-04-26,105.26417783341479,10.663633764076623,0,Mưa lớn,An Giang
-2585,Lốc xoáy tại Quảng Ngãi,2025-04-23,108.559,14.707,0,Mưa lớn,Quang Ngai
-2586,"Dông lốc, sét, mưa đá tại Tuyên Quang",2025-05-15,105.186887,21.814055,0,"Dông lốc, sét, mưa đá",Tuyen Quang
-2587,Sạt lở đất tại An Giang,2025-05-18,105.4363863635123,10.512964643354163,0,Sạt lở đất,An Giang
-2588,Động đất tại Kon Tum,2025-06-02,108.16,15.048,0,Động đất,Kon Tum
-2589,"Mưa lớn, ngập úng, sạt lở đất tại Hà Giang",2025-05-17,104.789056,22.251531,0,Mưa lớn,Ha Giang
-2590,"Dông, lốc tại An Giang",2025-04-26,105.29262677196296,10.664433196430608,0,"Dông lốc, sét, mưa đá",An Giang
-2591,Động đất tại Quảng Nam,2025-06-09,108.084,15.028,0,Động đất,Kon Tum
-2592,Động đất tại Kon Tum,2025-04-27,108.26,14.847,0,Động đất,Kon Tum
-2593,Lốc tại Cà Mau,2025-04-26,105.00980968025677,9.358225879215126,0,Lốc,Ca Mau
-2594,Dông lốc tại Đồng Tháp,2025-06-01,105.248,10.8126,0,"Dông lốc, sét, mưa đá",Đong Thap
-2595,Sạt lở đất tại An Giang,2025-04-25,105.21001321482774,10.323657023354484,0,Sạt lở đất,An Giang
-2596,Mưa lớn tại Kiên Giang,2025-04-27,104.90312481810632,9.724808416007644,0,Mưa lớn,Kien Giang
-2597,Động đất tại Kon Tum,2025-04-29,108.226,14.88,0,Động đất,Kon Tum
-2598,Động đất tại Kon Tum,2025-06-10,108.268,14.773,0,Động đất,Kon Tum
-2599,Động đất tại Kon Tum,2025-04-30,108.268,14.852,0,Động đất,Kon Tum
-2600,Động đất tại Quảng Nam,2025-05-01,108.16800543108968,15.180995420134543,0,Động đất,Quang Nam
-2601,Động đất tại Quảng Nam,2025-05-01,108.089,15.109,0,Động đất,Quang Nam
-2602,Động đất tại Quảng Nam,2025-05-01,108.155,15.181,0,Động đất,Quang Nam
-2603,Động đất tại Kon Tum,2025-05-02,108.19,14.884,0,Động đất,Kon Tum
-2604,"Mưa lớn kèm theo dông lốc gây ngập úng, sạt lở đất tại Cao Bằng",2025-05-17,106.228525,22.720831,0,Mưa lớn,Cao Bang
-2605,Động đất tại Quảng Nam,2025-06-03,108.139,14.977,0,Động đất,Quang Nam
-2606,Động đất tại Kon Tum,2025-06-10,108.29,14.943,0,Động đất,Kon Tum
-2607,Động đất tại Kon Tum,2025-05-02,108.176,14.961,0,Động đất,Kon Tum
-2608,Lốc xoáy tại Quảng Bình,2025-04-23,106.2767,17.6478,0,Lốc,Quang Binh
-2609,"Dông, lốc, sét tại Kon Tum",2025-04-25,107.8781575695809,14.383800911562819,0,"Dông lốc, sét, mưa đá",Kon Tum
-2610,Mưa lớn tại Thái Nguyên,2025-05-18,105.96234110040986,21.489802654996094,0,Mưa lớn,Thai Nguyen
-2611,"Dông, lốc tại Nghệ An",2025-04-28,105.52383,19.013454,0,"Dông lốc, sét, mưa đá",Nghe An
-2612,Mưa lớn tại Hà Giang,2025-05-18,104.94472897,22.497047,0,Mưa lớn,Ha Giang
-2613,"Dông lốc, sét, mưa đá tại Nghệ An",2025-05-04,104.321585,19.636593,0,"Dông lốc, sét, mưa đá",Nghe An
-2614,Động đất tại Kon Tum,2025-05-12,108.279,14.811,0,Động đất,Kon Tum
-2615,"Mưa lớn kèm dông, lốc tại Nghệ An",2025-05-10,104.965007,19.695935,0,Mưa lớn,Nghe An
-2616,Động đất tại Quảng Nam,2025-05-13,108.153,15.134,0,Động đất,Quang Nam
-2617,Sét tại Hoà Bình,2025-06-03,105.1804897615824,20.689530113262883,0,Sét,Hoa Binh
-2618,Động đất tại Kon Tum,2025-05-14,108.234,14.842,0,Động đất,Kon Tum
-2620,Động đất tại Quảng Nam,2025-06-03,108.105,15.027,0,Động đất,Quang Nam
-2621,Mưa lớn tại Bình Phước,2025-05-14,106.86054556176781,11.528418943980721,0,Mưa lớn,Binh Phuoc
-2622,Động đất tại Quảng Nam,2025-06-04,108.078,15.03,0,Động đất,Quang Nam
-2623,Động đất tại Kon Tum,2025-05-15,108.283,14.79,0,Động đất,Kon Tum
-2624,Động đất tại Quảng Nam,2025-06-03,108.098,15.026,0,Động đất,Quang Nam
-2625,Động đất tại Kon Tum,2025-06-03,108.19,14.98,0,Động đất,Kon Tum
-2626,Động đất tại Kon Tum,2025-06-04,108.184,14.929,0,Động đất,Kon Tum
-2627,Động đất tại Điện Biên,2025-05-16,103.133,21.735,0,Động đất,Đien Bien
-2628,Sạt lở đất tại Cao Bằng,2025-06-03,105.455765,22.9695,0,Sạt lở đất,Cao Bang
-2629,Dông lốc tại Cao Bằng,2025-06-03,105.51537,22.886686,0,Lốc,Cao Bang
-2630,Động đất tại Kon Tum,2025-06-04,108.261,14.869,0,Động đất,Kon Tum
-2631,"Mưa, dông kèm sét tại Cao Bằng",2025-06-02,105.969897,22.85235,0,"Dông lốc, sét, mưa đá",Cao Bang
-2632,Sạt lở đất tại Lai Châu,2025-05-16,103.3818,22.4584,0,Sạt lở đất,Lai Chau
-2633,Động đất tại Kon Tum,2025-06-04,108.276,14.833,0,Động đất,Kon Tum
-2634,Sạt lở đất tại Cà Mau,2025-05-30,105.0735258,8.8110797,0,Sạt lở đất,Ca Mau
-2635,Động đất tại Điện Biên,2025-05-16,103.129,21.747,0,Động đất,Đien Bien
-2636,Mưa lớn tại Yên Bái,2025-05-16,105.01603,21.877,0,Mưa lớn,Yen Bai
-2637,Mưa lớn kèm dông tại Đồng Nai,2025-05-13,107.3039,11.1919,0,Mưa lớn,Đong Nai
-2638,Mưa lớn tại Cao Bằng,2025-05-15,106.0974,22.6894,0,Mưa lớn,Cao Bang
-2639,Sạt lở đất tại Cà Mau,2025-05-30,105.244074,8.81824,0,Sạt lở đất,Ca Mau
-2640,"Mưa lớn, lũ quét, sạt lở đất tại Bắc Kạn",2025-05-17,105.72996,22.310067,0,Mưa lớn,Bac Kan
-2641,"Mưa lớn, sạt lở đất tại Tuyên Quang",2025-05-17,105.370004,22.35363,0,Mưa lớn,Tuyen Quang
-2642,Động đất tại Kon Tum,2025-05-22,108.221,14.879,0,Động đất,Kon Tum
-2643,Sạt lở đất tại Cà Mau,2025-05-31,105.18989,8.804,0,Sạt lở đất,Ca Mau
-2644,Sạt lở đất tại Cà Mau,2025-05-31,104.96853,8.794465,0,Sạt lở đất,Ca Mau
-2645,Sét tại Thanh Hoá,2025-05-21,105.33256,19.9225,0,Sét,Thanh Hoa
-2647,"Dông, lốc tại Điện Biên",2025-05-21,103.01579,21.3882,0,"Dông lốc, sét, mưa đá",Đien Bien
-2648,Sạt lở đất tại Cà Mau,2025-06-02,104.949,8.7549,0,Sạt lở đất,Ca Mau
-2649,Sạt lở đất tại Cà Mau,2025-06-02,105.3295,9.0256,0,Sạt lở đất,Ca Mau
-2650,Sạt lở đất tại Cà Mau,2025-06-01,105.2644496,8.841346,0,Sạt lở đất,Ca Mau
-2651,Dông tại Cà Mau,2025-06-02,105.287546,8.8527,0,"Dông lốc, sét, mưa đá",Ca Mau
-2652,Sạt lở đất tại An Giang,2025-05-22,105.4498,10.4593,0,Sạt lở đất,An Giang
-2653,Động đất tại Quảng Nam,2025-05-23,107.745,15.47,0,Động đất,Quang Nam
-2654,Sạt lở đất tại Cà Mau,2025-06-02,104.94747,8.8105,0,Sạt lở đất,Ca Mau
-2655,Sạt lở đất tại Cà Mau,2025-06-02,105.176912,8.903835,0,Sạt lở đất,Ca Mau
+2424,Động đất tại Quảng Nam,2025-06-15,108.134,15.017,0,Động đất,Quang Nam
+2425,Động đất tại Kon Tum,2025-01-24,108.164,14.844,0,Động đất,Kon Tum
+2426,Lũ tại Hoà Bình,2025-06-03,105.44359045744613,20.71613012185897,0,Lũ,Hoa Binh
+2427,Động đất tại Kon Tum,2025-01-27,108.368,14.828,0,Động đất,Kon Tum
+2428,Động đất tại Kon Tum,2025-01-09,108.166,14.971,0,Động đất,Kon Tum
+2429,Mưa kèm theo dông lốc tại Đồng Tháp,2025-03-17,105.41629266098954,10.63069185649334,0,Lốc,Đong Thap
+2430,Động đất tại Kon Tum,2025-01-27,108.25,14.86,0,Động đất,Kon Tum
+2431,Dông lốc tại Long An,2025-06-02,106.600158,10.5803,0,"Dông lốc, sét, mưa đá",Long An
+2432,Động đất tại Kon Tum,2025-02-02,108.233,14.871,0,Động đất,Kon Tum
+2433,Rét hại tại Sơn La,2025-02-06,103.731643,20.837864,0,Rét hại,Son La
+2434,Sạt lở đất tại Cà Mau,2025-02-24,105.257335,8.774532,0,Sạt lở đất,Ca Mau
+2435,Động đất tại Quảng Nam,2025-01-27,108.183,15.141,0,Động đất,Quang Nam
+2436,Dông lốc tại Đồng Tháp,2025-06-03,105.552,10.5744,0,"Dông lốc, sét, mưa đá",Đong Thap
+2437,Sạt lở đất tại Vĩnh Long,2025-01-29,105.94008,9.991251,0,Sạt lở đất,Vinh Long
+2438,Động đất tại Quảng Nam,2025-06-09,108.084,15.028,0,Động đất,Quang Nam
+2440,Động đất tại Kon Tum,2025-01-05,108.179,14.949,0,Động đất,Kon Tum
+2441,Động đất tại Kon Tum,2025-01-10,108.289,14.909,0,Động đất,Kon Tum
+2442,Động đất tại Kon Tum,2025-01-04,108.309,14.67,0,Động đất,Kon Tum
+2443,Động đất tại Kon Tum,2025-05-26,108.168,14.993,0,Động đất,Kon Tum
+2444,Động đất tại Kon Tum,2025-02-02,108.257,14.803,0,Động đất,Kon Tum
+2445,Sạt lở đất tại Hậu Giang,2025-02-03,105.772402,9.867015,0,Sạt lở đất,Hau Giang
+2447,Động đất tại Quảng Nam,2025-05-26,108.123,15.052,0,Động đất,Quang Nam
+2448,Động đất tại Hà Nội,2025-02-03,105.582,20.86,0,Động đất,Ha Noi
+2449,Động đất tại Quảng Nam,2025-05-26,108.106,15.067,0,Động đất,Quang Nam
+2450,Động đất tại Kon Tum,2025-01-12,108.147,14.903,0,Động đất,Kon Tum
+2451,"Mưa lớn, ngập lụt tại Hà Tĩnh",2025-05-24,105.929309,18.22223,0,Ngập lụt,Ha Tinh
+2452,Mưa lớn tại Lai Châu,2025-06-07,103.66355,22.194,0,Mưa lớn,Lai Chau
+2453,Động đất tại Kon Tum,2025-01-31,108.236,14.851,0,Động đất,Kon Tum
+2454,Động đất tại Kon Tum,2025-05-25,108.153,15.029,0,Động đất,Kon Tum
+2455,Động đất tại Quảng Nam,2025-01-30,108.21,15.15,0,Động đất,Quang Nam
+2456,Động đất tại Kon Tum,2025-02-01,108.206,14.839,0,Động đất,Kon Tum
+2457,Rét hại tại Sơn La,2025-01-13,104.008064,21.154254,0,Rét hại,Son La
+2458,Động đất tại Quảng Nam,2025-05-25,108.138,15.021,0,Động đất,Quang Nam
+2459,Mưa lớn tại Lào Cai,2025-06-07,104.120437,22.76313,0,Mưa lớn,Lao Cai
+2460,Động đất tại Kon Tum,2025-05-25,108.178,14.998,0,Động đất,Kon Tum
+2462,Sét tại Nghệ An,2025-06-07,104.694,19.588,0,Sét,Nghe An
+2463,Động đất tại Kon Tum,2025-02-07,108.203,14.877,0,Động đất,Kon Tum
+2464,Động đất tại Kon Tum,2025-02-07,108.168,14.865,0,Động đất,Kon Tum
+2465,Động đất tại Kon Tum,2025-02-07,108.149,14.865,0,Động đất,Kon Tum
+2466,Động đất tại Kon Tum,2025-05-25,108.269,14.944,0,Động đất,Kon Tum
+2468,Động đất tại Kon Tum,2025-02-07,108.328,14.868,0,Động đất,Kon Tum
+2469,Động đất tại Kon Tum,2025-02-08,108.158,14.924,0,Động đất,Kon Tum
+2470,Động đất tại Kon Tum,2025-02-10,108.245,14.868,0,Động đất,Kon Tum
+2471,Động đất tại Kon Tum,2025-05-25,108.154,15.001,0,Động đất,Kon Tum
+2472,Động đất tại Kon Tum,2025-02-15,108.261,14.773,0,Động đất,Kon Tum
+2473,Động đất tại Quảng Nam,2025-02-15,108.075,15.098,0,Động đất,Quang Nam
+2474,Mưa lớn tại Cao Bằng,2025-05-23,105.584,22.904,0,Mưa lớn,Cao Bang
+2475,Mưa lớn tại Hà Giang,2025-05-20,104.94499,22.49777,0,Mưa lớn,Ha Giang
+2476,Động đất tại Kon Tum,2025-02-17,108.184,14.9,0,Động đất,Kon Tum
+2477,Động đất tại Quảng Nam,2025-05-25,108.153,14.988,0,Động đất,Quang Nam
+2478,Động đất tại Kon Tum,2025-05-23,108.389,14.736,0,Động đất,Kon Tum
+2479,Động đất tại Kon Tum,2025-02-17,108.186,14.896,0,Động đất,Kon Tum
+2480,Động đất tại Kon Tum,2025-02-18,108.173,14.962,0,Động đất,Kon Tum
+2481,Động đất tại Quảng Nam,2025-02-18,108.112,15.087,0,Động đất,Quang Nam
+2482,Động đất tại Quảng Nam,2025-05-26,108.129,15.023,0,Động đất,Quang Nam
+2483,Động đất tại Kon Tum,2025-05-23,108.382,14.719,0,Động đất,Kon Tum
+2484,Động đất tại Kon Tum,2025-02-19,108.157,14.874,0,Động đất,Kon Tum
+2485,Động đất tại Quảng Nam,2025-05-26,108.125,15.03,0,Động đất,Quang Nam
+2486,Động đất tại Quảng Nam,2025-02-19,108.102,15.07,0,Động đất,Quang Nam
+2487,Động đất tại Kon Tum,2025-02-19,108.208,14.822,0,Động đất,Kon Tum
+2488,Động đất tại Kon Tum,2025-05-26,108.229,14.923,0,Động đất,Kon Tum
+2489,Động đất tại Quảng Ngãi,2025-02-22,108.045,15.196,0,Động đất,Quang Nam
+2490,Động đất tại Kon Tum,2025-05-25,108.153,14.869,0,Động đất,Kon Tum
+2491,Động đất tại Kon Tum,2025-03-02,108.282,14.861,0,Động đất,Kon Tum
+2492,Động đất tại Kon Tum,2025-03-02,108.308,14.816,0,Động đất,Kon Tum
+2493,Động đất tại Quảng Nam,2025-03-02,108.213,15.209,0,Động đất,Quang Nam
+2494,Động đất tại Kon Tum,2025-05-27,108.23,14.964,0,Động đất,Kon Tum
+2495,Động đất tại Quảng Nam,2025-02-25,108.08,15.219,0,Động đất,Quang Nam
+2496,Động đất tại Quảng Nam,2025-02-24,108.078,15.178,0,Động đất,Quang Nam
+2497,Động đất tại Kon Tum,2025-02-19,108.162,14.872,0,Động đất,Kon Tum
+2498,Động đất tại Kon Tum,2025-05-27,108.19,14.984,0,Động đất,Kon Tum
+2499,Động đất tại Kon Tum,2025-03-06,108.165,14.938,0,Động đất,Kon Tum
+2500,Động đất tại Kon Tum,2025-03-08,108.185,14.838,0,Động đất,Kon Tum
+2501,Động đất tại Kon Tum,2025-03-06,108.063,15.185,0,Động đất,Kon Tum
+2502,Động đất tại Kon Tum,2025-03-06,108.162,14.924,0,Động đất,Kon Tum
+2503,Động đất tại Kon Tum,2025-05-27,108.197,14.975,0,Động đất,Kon Tum
+2504,Động đất tại Kon Tum,2025-03-13,108.315,14.756,0,Động đất,Kon Tum
+2505,Động đất tại Kon Tum,2025-03-31,108.282,14.847,0,Động đất,Kon Tum
+2506,Sạt lở đất tại Bạc Liêu,2025-03-12,105.73467,9.228062,0,Sạt lở đất,Bac Lieu
+2507,Động đất tại Kon Tum,2025-03-30,108.178,14.955,0,Động đất,Kon Tum
+2508,Động đất tại Kon Tum,2025-03-31,108.262,14.849,0,Động đất,Kon Tum
+2509,Động đất tại Kon tum,2025-05-27,108.158,15.014,0,Động đất,Kon Tum
+2510,Động đất tại Kon Tum,2025-03-18,108.175,14.954,0,Động đất,Kon Tum
+2511,Động đất tại Kon Tum,2025-03-18,108.158,14.953,0,Động đất,Kon Tum
+2512,Động đất tại Kon Tum,2025-03-18,108.23,14.978,0,Động đất,Kon Tum
+2513,Sạt lở đất tại Hậu Giang,2025-02-02,105.770024,9.865383,0,Sạt lở đất,Hau Giang
+2514,Động đất tại Kon Tum,2025-03-20,108.198,14.865,0,Động đất,Kon Tum
+2515,Động đất tại Kon Tum,2025-05-27,108.19,14.996,0,Động đất,Kon Tum
+2516,Động đất tại Kon Tum,2025-03-21,108.262,14.773,0,Động đất,Kon Tum
+2517,Mưa lớn kèm theo dông lốc tại Tiền Giang,2025-02-18,106.12644733645898,10.376702167251553,0,Lốc,Tien Giang
+2518,Động đất tại Quảng Nam,2025-03-22,108.102,14.997,0,Động đất,Quang Nam
+2519,Động đất tại Kon Tum,2025-05-27,108.165,14.983,0,Động đất,Kon Tum
+2520,Động đất tại Kon Tum,2025-03-25,108.203,14.801,0,Động đất,Kon Tum
+2521,Động đất tại Kon Tum,2025-03-25,108.25,14.76,0,Động đất,Kon Tum
+2522,Động đất tại Kon Tum,2025-03-25,108.27,14.818,0,Động đất,Kon Tum
+2523,Ngập lụt tại Quảng Trị,2025-05-25,107.24868195201744,16.716965146235783,0,Ngập lụt,Quang Tri
+2525,Động đất tại Kon Tum,2025-03-27,108.241,14.57,0,Động đất,Kon Tum
+2526,Động đất tại Kon Tum,2025-03-27,108.2303,14.589,0,Động đất,Kon Tum
+2527,Động đất tại Kon Tum,2025-05-27,108.184,14.985,0,Động đất,Kon Tum
+2528,Động đất tại Kon Tum,2025-05-28,108.197,14.98,0,Động đất,Kon Tum
+2529,Động đất tại Kon Tum,2025-03-28,108.265,14.659,0,Động đất,Kon Tum
+2530,Động đất tại Kon Tum,2025-03-31,108.189,14.989,0,Động đất,Kon Tum
+2531,Động đất tại Quảng Nam,2025-05-28,108.126,15.023,0,Động đất,Quang Nam
+2532,Động đất tại Kon Tum,2025-03-31,108.226,14.845,0,Động đất,Kon Tum
+2533,Động đất tại Kon Tum,2025-04-07,108.247,14.86,0,Động đất,Kon Tum
+2534,Động đất tại Quảng Nam,2025-05-28,108.154,14.994,0,Động đất,Quang Nam
+2535,Động đất tại Kon Tum,2025-04-07,108.271,14.814,0,Động đất,Kon Tum
+2536,Động đất tại Kon Tum,2025-04-05,108.274,14.758,0,Động đất,Kon Tum
+2537,Động đất tại Kon Tum,2025-04-05,108.238,14.808,0,Động đất,Kon Tum
+2538,Động đất tại Kon Tum,2025-05-28,108.159,14.994,0,Động đất,Kon Tum
+2539,Động đất tại Kon Tum,2025-04-04,108.26,14.773,0,Động đất,Kon Tum
+2540,Động đất tại Kon Tum,2025-04-04,108.204,14.829,0,Động đất,Kon Tum
+2541,Động đất tại Kon Tum,2025-04-04,108.241,14.783,0,Động đất,Kon Tum
+2542,Động đất tại Kon Tum,2025-05-28,108.17,14.987,0,Động đất,Kon Tum
+2543,Động đất tại Kon Tum,2025-05-28,108.157,14.999,0,Động đất,Kon Tum
+2544,Động đất tại Kon Tum,2025-04-09,108.299,14.781,0,Động đất,Kon Tum
+2545,Sét tại Bình Thuận,2025-05-28,108.173547,11.054926,0,Sét,Binh Thuan
+2546,Động đất tại Kon Tum,2025-04-14,108.391,14.671,0,Động đất,Kon Tum
+2547,Động đất tại Kon Tum,2025-04-14,108.131,15.189,0,Động đất,Kon Tum
+2548,Sạt lở đất tại An Gang,2025-05-29,105.262123,10.559218,0,Sạt lở đất,An Giang
+2549,Động đất tại Kon tum,2025-05-30,108.275,14.839,0,Động đất,Kon Tum
+2550,Động đất tại Kon Tum,2025-05-30,108.294,14.826,0,Động đất,Kon Tum
+2551,Động đất tại Quảng Nam,2025-06-01,108.151,14.991,0,Động đất,Quang Nam
+2552,Động đất tại Quảng Nam,2025-06-02,108.084,15.029,0,Động đất,Quang Nam
+2553,Lốc tại Quảng Nam,2025-04-22,107.26759,15.762727,0,Lốc,Quang Nam
+2554,Động đất tại Kon Tum,2025-04-15,108.235,14.864,0,Động đất,Kon Tum
+2555,Động đất tại Kon Tum,2025-04-16,108.162,14.962,0,Động đất,Kon Tum
+2556,Mưa lớn tại Quảng Bình,2025-04-14,106.30200155936734,17.769183660214388,0,Mưa lớn,Quang Binh
+2557,Động đất tại Kon Tum,2025-04-17,108.282,14.915,0,Động đất,Kon Tum
+2558,Động đất tại Kon Tum,2025-04-13,108.29,14.854,0,Động đất,Kon Tum
+2559,Động đất tại Kon Tum,2025-06-09,108.286,14.943,0,Động đất,Kon Tum
+2560,Động đất tại Kon Tum,2025-04-19,108.215,14.844,0,Động đất,Kon Tum
+2561,Sét tại Hà Tĩnh,2025-05-29,105.5898,18.2588,0,Sét,Ha Tinh
+2562,Mưa đá kèm lốc xoáy tại Lâm Đồng,2025-04-14,107.73728968193184,11.475353341962927,0,"Dông lốc, sét, mưa đá",Lam Đong
+2563,Động đất tại Quảng Nam,2025-05-31,108.151,14.991,0,Động đất,Quang Nam
+2564,Động đất tại Kon Tum,2025-04-20,108.175,15.011,0,Động đất,Kon Tum
+2565,Động đất tại Quảng Nam,2025-04-21,108.094,15.137,0,Động đất,Quang Nam
+2566,Động đất tại Kon Tum,2025-04-22,108.224,14.809,0,Động đất,Kon Tum
+2567,Mưa dông kèm lốc xoáy tại Lâm Đồng,2025-04-14,107.51180662159413,11.405231253410644,0,"Dông lốc, sét, mưa đá",Lam Đong
+2568,Động đất tại Kon Tum,2025-04-23,108.312,14.75,0,Động đất,Kon Tum
+2570,"Dông lốc, sét, mưa đá tại Nghệ An",2025-04-22,105.33661,18.793983,0,"Dông lốc, sét, mưa đá",Nghe An
+2571,Lốc tại Quảng Trị,2025-04-22,107.085115,15.73255,0,Lốc,Quang Tri
+2572,Động đất tại Kon Tum,2025-05-31,108.295,14.778,0,Động đất,Kon Tum
+2573,Lốc tại Nghệ An,2025-06-08,105.041,18.942,0,Lốc,Nghe An
+2574,"Dông, sét, lốc tại Hà Giang",2025-04-24,105.407123,23.164839,0,"Dông lốc, sét, mưa đá",Ha Giang
+2575,Động đất tại Kon Tum,2025-04-26,108.163,14.957,0,Động đất,Kon Tum
+2576,Lốc tại Nghệ An,2025-04-23,104.1382,19.5318,0,Lốc,Nghe An
+2577,Động đất tại Kon Tum,2025-06-02,108.16,14.892,0,Động đất,Kon Tum
+2578,Động đất tại Kon Tum,2025-06-02,108.168,14.844,0,Động đất,Kon Tum
+2579,Động đất tại Kon Tum,2025-04-26,108.151,14.949,0,Động đất,Kon Tum
+2580,Động đất tại Kon Tum,2025-04-26,108.171,14.957,0,Động đất,Kon Tum
+2581,"Dông, lốc tại Gia Lai",2025-04-25,108.68966,13.34375,0,"Dông lốc, sét, mưa đá",Gia Lai
+2582,Sét tại Bình Định,2025-05-11,108.963436,13.92769,0,Sét,Binh Đinh
+2583,"Dông lốc, sét, mưa đá tại Sơn La",2025-04-26,103.60898,21.19055,0,"Dông lốc, sét, mưa đá",Son La
+2584,Mưa lớn tại An Giang,2025-04-25,105.2213,10.7795,0,Mưa lớn,An Giang
+2585,Mưa lớn tại An Giang,2025-04-26,105.26417783341479,10.663633764076623,0,Mưa lớn,An Giang
+2586,Lốc xoáy tại Quảng Ngãi,2025-04-23,108.559,14.707,0,Mưa lớn,Quang Ngai
+2587,"Dông lốc, sét, mưa đá tại Tuyên Quang",2025-05-15,105.186887,21.814055,0,"Dông lốc, sét, mưa đá",Tuyen Quang
+2588,Sạt lở đất tại An Giang,2025-05-18,105.4363863635123,10.512964643354163,0,Sạt lở đất,An Giang
+2589,Động đất tại Kon Tum,2025-06-02,108.16,15.048,0,Động đất,Kon Tum
+2590,"Mưa lớn, ngập úng, sạt lở đất tại Hà Giang",2025-05-17,104.789056,22.251531,0,Mưa lớn,Ha Giang
+2591,"Dông, lốc tại An Giang",2025-04-26,105.29262677196296,10.664433196430608,0,"Dông lốc, sét, mưa đá",An Giang
+2592,Động đất tại Quảng Nam,2025-06-09,108.084,15.028,0,Động đất,Kon Tum
+2593,Động đất tại Kon Tum,2025-04-27,108.26,14.847,0,Động đất,Kon Tum
+2594,Lốc tại Cà Mau,2025-04-26,105.00980968025677,9.358225879215126,0,Lốc,Ca Mau
+2595,Dông lốc tại Đồng Tháp,2025-06-01,105.248,10.8126,0,"Dông lốc, sét, mưa đá",Đong Thap
+2596,Sạt lở đất tại An Giang,2025-04-25,105.21001321482774,10.323657023354484,0,Sạt lở đất,An Giang
+2597,Mưa lớn tại Kiên Giang,2025-04-27,104.90312481810632,9.724808416007644,0,Mưa lớn,Kien Giang
+2598,Động đất tại Kon Tum,2025-04-29,108.226,14.88,0,Động đất,Kon Tum
+2599,Động đất tại Kon Tum,2025-06-10,108.268,14.773,0,Động đất,Kon Tum
+2600,Động đất tại Kon Tum,2025-04-30,108.268,14.852,0,Động đất,Kon Tum
+2601,Động đất tại Quảng Nam,2025-05-01,108.16800543108968,15.180995420134543,0,Động đất,Quang Nam
+2602,Động đất tại Quảng Nam,2025-05-01,108.089,15.109,0,Động đất,Quang Nam
+2603,Động đất tại Quảng Nam,2025-05-01,108.155,15.181,0,Động đất,Quang Nam
+2604,Động đất tại Kon Tum,2025-05-02,108.19,14.884,0,Động đất,Kon Tum
+2605,"Mưa lớn kèm theo dông lốc gây ngập úng, sạt lở đất tại Cao Bằng",2025-05-17,106.228525,22.720831,0,Mưa lớn,Cao Bang
+2606,Động đất tại Quảng Nam,2025-06-03,108.139,14.977,0,Động đất,Quang Nam
+2607,Động đất tại Kon Tum,2025-06-10,108.29,14.943,0,Động đất,Kon Tum
+2608,Động đất tại Kon Tum,2025-05-02,108.176,14.961,0,Động đất,Kon Tum
+2609,Lốc xoáy tại Quảng Bình,2025-04-23,106.2767,17.6478,0,Lốc,Quang Binh
+2610,"Dông, lốc, sét tại Kon Tum",2025-04-25,107.8781575695809,14.383800911562819,0,"Dông lốc, sét, mưa đá",Kon Tum
+2611,Mưa lớn tại Thái Nguyên,2025-05-18,105.96234110040986,21.489802654996094,0,Mưa lớn,Thai Nguyen
+2612,"Dông, lốc tại Nghệ An",2025-04-28,105.52383,19.013454,0,"Dông lốc, sét, mưa đá",Nghe An
+2613,Mưa lớn tại Hà Giang,2025-05-18,104.94472897,22.497047,0,Mưa lớn,Ha Giang
+2614,"Dông lốc, sét, mưa đá tại Nghệ An",2025-05-04,104.321585,19.636593,0,"Dông lốc, sét, mưa đá",Nghe An
+2615,Động đất tại Kon Tum,2025-05-12,108.279,14.811,0,Động đất,Kon Tum
+2616,"Mưa lớn kèm dông, lốc tại Nghệ An",2025-05-10,104.965007,19.695935,0,Mưa lớn,Nghe An
+2617,Động đất tại Quảng Nam,2025-05-13,108.153,15.134,0,Động đất,Quang Nam
+2618,Sét tại Hoà Bình,2025-06-03,105.1804897615824,20.689530113262883,0,Sét,Hoa Binh
+2619,Động đất tại Kon Tum,2025-05-14,108.234,14.842,0,Động đất,Kon Tum
+2621,Động đất tại Quảng Nam,2025-06-03,108.105,15.027,0,Động đất,Quang Nam
+2622,Mưa lớn tại Bình Phước,2025-05-14,106.86054556176781,11.528418943980721,0,Mưa lớn,Binh Phuoc
+2623,Động đất tại Quảng Nam,2025-06-04,108.078,15.03,0,Động đất,Quang Nam
+2624,Động đất tại Kon Tum,2025-05-15,108.283,14.79,0,Động đất,Kon Tum
+2625,Động đất tại Quảng Nam,2025-06-03,108.098,15.026,0,Động đất,Quang Nam
+2626,Động đất tại Kon Tum,2025-06-03,108.19,14.98,0,Động đất,Kon Tum
+2627,Động đất tại Kon Tum,2025-06-04,108.184,14.929,0,Động đất,Kon Tum
+2628,Động đất tại Điện Biên,2025-05-16,103.133,21.735,0,Động đất,Đien Bien
+2629,Sạt lở đất tại Cao Bằng,2025-06-03,105.455765,22.9695,0,Sạt lở đất,Cao Bang
+2630,Dông lốc tại Cao Bằng,2025-06-03,105.51537,22.886686,0,Lốc,Cao Bang
+2631,Động đất tại Kon Tum,2025-06-04,108.261,14.869,0,Động đất,Kon Tum
+2632,"Mưa, dông kèm sét tại Cao Bằng",2025-06-02,105.969897,22.85235,0,"Dông lốc, sét, mưa đá",Cao Bang
+2633,Sạt lở đất tại Lai Châu,2025-05-16,103.3818,22.4584,0,Sạt lở đất,Lai Chau
+2634,Động đất tại Kon Tum,2025-06-04,108.276,14.833,0,Động đất,Kon Tum
+2635,Sạt lở đất tại Cà Mau,2025-05-30,105.0735258,8.8110797,0,Sạt lở đất,Ca Mau
+2636,Động đất tại Điện Biên,2025-05-16,103.129,21.747,0,Động đất,Đien Bien
+2637,Mưa lớn tại Yên Bái,2025-05-16,105.01603,21.877,0,Mưa lớn,Yen Bai
+2638,Mưa lớn kèm dông tại Đồng Nai,2025-05-13,107.3039,11.1919,0,Mưa lớn,Đong Nai
+2639,Mưa lớn tại Cao Bằng,2025-05-15,106.0974,22.6894,0,Mưa lớn,Cao Bang
+2640,Sạt lở đất tại Cà Mau,2025-05-30,105.244074,8.81824,0,Sạt lở đất,Ca Mau
+2641,"Mưa lớn, lũ quét, sạt lở đất tại Bắc Kạn",2025-05-17,105.72996,22.310067,0,Mưa lớn,Bac Kan
+2642,"Mưa lớn, sạt lở đất tại Tuyên Quang",2025-05-17,105.370004,22.35363,0,Mưa lớn,Tuyen Quang
+2643,Động đất tại Kon Tum,2025-05-22,108.221,14.879,0,Động đất,Kon Tum
+2644,Sạt lở đất tại Cà Mau,2025-05-31,105.18989,8.804,0,Sạt lở đất,Ca Mau
+2645,Sạt lở đất tại Cà Mau,2025-05-31,104.96853,8.794465,0,Sạt lở đất,Ca Mau
+2646,Sét tại Thanh Hoá,2025-05-21,105.33256,19.9225,0,Sét,Thanh Hoa
+2648,"Dông, lốc tại Điện Biên",2025-05-21,103.01579,21.3882,0,"Dông lốc, sét, mưa đá",Đien Bien
+2649,Sạt lở đất tại Cà Mau,2025-06-02,104.949,8.7549,0,Sạt lở đất,Ca Mau
+2650,Sạt lở đất tại Cà Mau,2025-06-02,105.3295,9.0256,0,Sạt lở đất,Ca Mau
+2651,Sạt lở đất tại Cà Mau,2025-06-01,105.2644496,8.841346,0,Sạt lở đất,Ca Mau
+2652,Dông tại Cà Mau,2025-06-02,105.287546,8.8527,0,"Dông lốc, sét, mưa đá",Ca Mau
+2653,Sạt lở đất tại An Giang,2025-05-22,105.4498,10.4593,0,Sạt lở đất,An Giang
+2654,Động đất tại Quảng Nam,2025-05-23,107.745,15.47,0,Động đất,Quang Nam
+2655,Sạt lở đất tại Cà Mau,2025-06-02,104.94747,8.8105,0,Sạt lở đất,Ca Mau
+2656,Sạt lở đất tại Cà Mau,2025-06-02,105.176912,8.903835,0,Sạt lở đất,Ca Mau

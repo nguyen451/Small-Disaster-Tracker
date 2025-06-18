@@ -1,10 +1,12 @@
 from helper import helper
+
+import matplotlib.pyplot as plt
 import pandas as pd
 import os
 import sqlite3
 import unicodedata
 import re
-from prettytable import from_db_cursor
+import seaborn as sns
 
 
 def main():
@@ -21,6 +23,7 @@ def main():
         refresh = input("Refresh data (press 1), else press other keys: ")
         if refresh == "1":
             get_data(datafile, rawdata)
+    
 
     # connect to the database
     cnn = sqlite3.connect('vieDisasters.db')
@@ -39,28 +42,26 @@ def main():
                 # disaster by type:
                 print("Disaster by types: ")
                 order = int(input("Press 0 for ascending, 1 for descending order: "))
-                dsbt = dst_by_type(db,"vie", order)
-                print(from_db_cursor(dsbt))
+                helper.make_and_print_table(dst_by_type(db,"vie", order), ["disaster", "count"])
 
                 # print most freq disaster
                 print("Most freq disaster: ")
-                print(most_freq_dst(db,"vie"))
+                helper.make_and_print_table(most_freq_dst(db,"vie"), ["disaster", "count"])
 
                 # disaster by province
                 print("Disaster by prov: ")
                 while True:
                     try:
                         limit = int(input("Output limitation (press 0 for all results display): "))
-                        prov = input("Province: ")
                         order = int(input("Press 0 for ascending, 1 for descending order: "))
-                        dsbp = dst_by_prov(db, limit, prov, order)
-                        print(from_db_cursor(dsbp))
+                        helper.make_and_print_table(dst_by_prov(db, limit, order), ["province", "count"])
+                        break
                     except ValueError:
                         print("Invalid prompt, please try again")
                         continue
 
                 # disaster trends
-                disaster_trends(db, "vie")
+                disaster_trends(cnn, "vie")
             case 2:
                 while True:
                     try: 
@@ -69,15 +70,15 @@ def main():
                         # disaster by type
                         print("Disaster by types: ")
                         order = int(input("Press 0 for ascending, 1 for descending order: "))
-                        dsbt = dst_by_type(db, prov, order)
-                        print(from_db_cursor(dsbt))
+                        helper.make_and_print_table(dst_by_type(db, prov, order), ["disaster", "count"])
 
                         # print most freq disaster
                         print("Most freq disaster: ")
-                        print(most_freq_dst(db, prov))
+                        helper.make_and_print_table(most_freq_dst(db, prov), ["disaster", "count"])
 
                         # print disaster trends
-                        disaster_trends(db, prov)
+                        disaster_trends(cnn, prov)
+                        break
                     except ValueError:
                         print("Invalid input")
                         continue
@@ -126,7 +127,9 @@ def get_data(datafile : str, rawdatafile : str) -> None:
     for col in ["type", "level"]:
         df[col] = df[col].astype("category")
 
-    df["time_start"] = pd.to_datetime(df["time_start"]).dt.date
+    df["time_start"] = pd.to_datetime(df["time_start"])
+    df = df[df["time_start"].dt.year >= 2022] # drop outlier
+    df["time_start"] = df["time_start"].dt.date
     df["name"] = df["name"].str.strip()
 
     df = field_edit(df)
@@ -137,6 +140,7 @@ def get_data(datafile : str, rawdatafile : str) -> None:
     # save to SQLite
     connection = sqlite3.connect("vieDisasters.db")
     df.to_sql("disasters", connection, if_exists='replace')
+    connection.close()
 
 
 def field_edit(df : pd.DataFrame) -> pd.DataFrame:
@@ -159,8 +163,9 @@ def field_edit(df : pd.DataFrame) -> pd.DataFrame:
     df["province"] = df.apply(lambda x : extract_province2(x["kv_anhhuong"]), axis=1)
     filtered = [prov in provinces_and_east_Sea for prov in df["province"]]
     filtered = df[filtered]
-    filtered.drop(columns=["kv_anhhuong"], inplace=True)
-    return filtered
+    copy = filtered.copy()
+    copy.drop(columns=["kv_anhhuong"], inplace=True)
+    return copy
 
 
 def remove_accents(text : str) -> str:#                                       test
@@ -169,14 +174,14 @@ def remove_accents(text : str) -> str:#                                       te
 
 
 def normalize_text(text : str) -> str: #                                      test        
-    text = re.sub(r"\s+", " ", text.strip())
+    text = re.sub(r"\s+", " ", text.strip().strip('"').strip("'"))
     text = remove_accents(text)
     text = text.title()
     return text
 
 
 def extract_province2(kv_anhhuong) -> str: #                                  test
-    mat = re.search(r"tỉnh\s*(.*)", kv_anhhuong, re.IGNORECASE)
+    mat = re.search(r"tỉnh\s*([^\/\-$%@#!&\*].*)", kv_anhhuong, re.IGNORECASE)
     if mat:
         return normalize_text(mat.group(1))
     
@@ -214,20 +219,101 @@ def dst_by_type(db : sqlite3.Cursor, prov : str, order : int):
         "Vinh Long", "Vinh Phuc", "Yen Bai", "Bien Đong"
         ]
         if not prov in provinces_and_east_Sea:
-            raise ValueError
+            raise KeyError
         else:
             if order == 1:
-                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count" DESC', prov)
+                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count" DESC', (prov,))
             else:
-                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count"', prov)
-
+                db.execute('SELECT "type", COUNT("index") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type" ORDER BY "count"', (prov,))
     res = db.fetchall()
     return res
 
 
 def most_freq_dst(db : sqlite3.Cursor, prov : str):
-    return
+    if prov == "vie":
+        db.execute('SELECT "type", "count" FROM (SELECT "type", COUNT("type") AS "count" FROM "disasters" GROUP BY "type") WHERE ("count" = (SELECT MAX("count") FROM (SELECT COUNT("type") AS "count" FROM "disasters" GROUP BY "type")))')
+    else :
+        provinces_and_east_Sea = [
+        "An Giang", "Ba Ria - Vung Tau", "Bac Lieu", "Bac Giang", "Bac Kan",
+        "Bac Ninh", "Ben Tre", "Binh Duong", "Binh Đinh", "Binh Phuoc",
+        "Binh Thuan", "Ca Mau", "Cao Bang", "Can Tho", "Đa Nang",
+        "Đak Lak", "Đak Nong", "Đien Bien", "Đong Nai", "Đong Thap",
+        "Gia Lai", "Ha Giang", "Ha Nam", "Ha Noi", "Ha Tinh",
+        "Hai Duong", "Hai Phong", "Hau Giang", "Hoa Binh", "Hung Yen",
+        "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lang Son",
+        "Lao Cai", "Lam Đong", "Long An", "Nam Dinh", "Nghe An",
+        "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh",
+        "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang",
+        "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa",
+        "Thua Thien Hue", "Tien Giang", "TP. Ho Chi Minh", "Tra Vinh", "Tuyen Quang",
+        "Vinh Long", "Vinh Phuc", "Yen Bai", "Bien Đong"
+        ]
+        if not prov in provinces_and_east_Sea:
+            raise KeyError
+        db.execute('SELECT "type", "count" FROM (SELECT "type", COUNT("type") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type") WHERE ("count" = (SELECT MAX("count") FROM (SELECT COUNT("type") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type")))', (prov, prov))
+    
+    res = db.fetchall()
+    return res
         
+
+def dst_by_prov(db : sqlite3.Cursor, limit, order):
+    if not (isinstance(limit, int) and order in [0,1]):
+        raise ValueError
+    
+    query = 'SELECT "province", COUNT("province") AS "count" FROM "disasters" GROUP BY "province"'
+    if order == 1:
+        query = query + ' ORDER BY "count" DESC'
+    else :
+        query = query + ' ORDER BY "count"'
+    if limit != 0:
+        query = query + ' LIMIT ' + str(limit)
+    
+    db.execute(query)
+    res = db.fetchall()
+    return res
+
+
+def disaster_trends(cnn : sqlite3.Connection, prov : str):
+    # check for proper input
+    provinces_and_east_Sea = [
+        "An Giang", "Ba Ria - Vung Tau", "Bac Lieu", "Bac Giang", "Bac Kan",
+        "Bac Ninh", "Ben Tre", "Binh Duong", "Binh Đinh", "Binh Phuoc",
+        "Binh Thuan", "Ca Mau", "Cao Bang", "Can Tho", "Đa Nang",
+        "Đak Lak", "Đak Nong", "Đien Bien", "Đong Nai", "Đong Thap",
+        "Gia Lai", "Ha Giang", "Ha Nam", "Ha Noi", "Ha Tinh",
+        "Hai Duong", "Hai Phong", "Hau Giang", "Hoa Binh", "Hung Yen",
+        "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lang Son",
+        "Lao Cai", "Lam Đong", "Long An", "Nam Dinh", "Nghe An",
+        "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh",
+        "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang",
+        "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa",
+        "Thua Thien Hue", "Tien Giang", "TP. Ho Chi Minh", "Tra Vinh", "Tuyen Quang",
+        "Vinh Long", "Vinh Phuc", "Yen Bai", "Bien Đong"
+        ]
+    if prov != "vie" and not prov in provinces_and_east_Sea:
+        raise KeyError
+    
+    # plot for 5 most freq disaster
+    # prepare data
+    query=""
+    if prov == "vie":
+        query = 'SELECT "type", COUNT("type") as "count", strftime("%Y","time_start") as "year" FROM "disasters" WHERE "type" IN (SELECT "type" FROM "disasters" GROUP BY "type" ORDER BY COUNT("type") DESC LIMIT 5) AND strftime("%Y","time_start") < (SELECT MAX(strftime("%Y","time_start")) FROM "disasters") GROUP BY "type", "year"'
+    else:
+        query = f'SELECT "type", COUNT("type") as "count", strftime("%Y","time_start") as "year" FROM "disasters" WHERE "province" = "{prov}" AND "type" IN (SELECT "type" FROM "disasters" WHERE "province" = "{prov}" GROUP BY "type" ORDER BY COUNT("type") DESC LIMIT 5) AND strftime("%Y","time_start") < (SELECT MAX(strftime("%Y","time_start")) FROM "disasters") GROUP BY "type", "year"'
+    df = pd.read_sql_query(query, cnn)
+    # data for max freq:
+    grouped = df.groupby("type")["count"].sum().reset_index()
+    grouped = grouped.sort_values("count", ascending=True)
+    # plot
+    fig, (ax1, ax2) = plt.subplots(1,2, figsize=(15,5))
+    fig.suptitle('5 most freq disaster and trends')
+    sns.barplot(x="type", y="count", data=grouped, ax=ax1, palette="YlGnBu", hue="type")
+    ax1.set_title("5 most freq disaster")
+    sns.lineplot(data=df, x="year", y="count", hue="type", palette="YlGnBu", ax=ax2)
+    ax2.set_title("Trends of disasters")
+
+    plt.show()
+
 
 if __name__ == "__main__":
     main()
