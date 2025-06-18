@@ -1,4 +1,4 @@
-import helper
+from helper import helper
 
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
@@ -24,12 +24,12 @@ def main():
         refresh = input("Refresh data (press 1), else press other keys: ")
         if refresh == "1":
             get_data(datafile, rawdata)
-
+    
 
     # connect to the database
     cnn = sqlite3.connect('vieDisasters.db')
     db = cnn.cursor()
-
+    
     # run the application:
     i = 0
     while True:
@@ -42,16 +42,16 @@ def main():
         pdf = PdfPages(f"disaster_report_{i}.pdf")
 
         match choice:
-            case 1:
+            case 1: 
                 # disaster by type:
                 print("Disaster by types: ")
                 order = int(input("Press 0 for ascending, 1 for descending order: "))
-                helper.make_and_print_table(dst_by_type(db,"vie", order), ["disaster", "count"])
+                helper.make_and_print_table(dst_by_type(db,"vie", order), ["disaster", "count"], "DISASTERS_IN_VIET_NAM")
 
 
                 # print most freq disaster
                 print("Most freq disaster: ")
-                helper.make_and_print_table(most_freq_dst(db,"vie"), ["disaster", "count"])
+                helper.make_and_print_table(most_freq_dst(db,"vie"), ["disaster", "count"], "MOST_FREQUENT_DISASTER_IN_VIET_NAM")
 
                 # disaster by province
                 print("Disaster by prov: ")
@@ -59,7 +59,7 @@ def main():
                     try:
                         limit = int(input("Output limitation (press 0 for all results display): "))
                         order = int(input("Press 0 for ascending, 1 for descending order: "))
-                        helper.make_and_print_table(dst_by_prov(db, limit, order), ["province", "count"])
+                        helper.make_and_print_table(dst_by_prov(db, limit, order), ["province", "count"], "DISASTER_BY_PROVINCE_IN_VIET_NAM")
                         break
                     except ValueError:
                         print("Invalid prompt, please try again")
@@ -74,16 +74,16 @@ def main():
 
             case 2:
                 while True:
-                    try:
+                    try: 
                         prov = input("Province (one province only): ")
                         # disaster by type
                         print("Disaster by types: ")
                         order = int(input("Press 0 for ascending, 1 for descending order: "))
-                        helper.make_and_print_table(dst_by_type(db, prov, order), ["disaster", "count"])
+                        helper.make_and_print_table(dst_by_type(db, prov, order), ["disaster", "count"], f"DISASTERS_IN_{prov.upper()}")
 
                         # print most freq disaster
                         print("Most freq disaster: ")
-                        helper.make_and_print_table(most_freq_dst(db, prov), ["disaster", "count"])
+                        helper.make_and_print_table(most_freq_dst(db, prov), ["disaster", "count"], f"MOST_FREQUENT_DISASTER_IN_{prov.upper()}")
 
                         # print disaster trends
                         disaster_trends(cnn, prov)
@@ -132,7 +132,7 @@ def get_data(datafile : str, rawdatafile : str) -> None:
     # clean and transform data
     df = pd.DataFrame(disasters)
     df.drop_duplicates(inplace=True)
-    df.drop(columns=["disaster_level"], inplace=True) # "kv_anhhuong",
+    df.drop(columns=["disaster_level"], inplace=True) # "kv_anhhuong", 
     df.dropna(subset=["name"], inplace=True)
     df["name"] = df["name"].str.strip()
 
@@ -185,7 +185,7 @@ def remove_accents(text : str) -> str:#                                       te
     return ''.join([c for c in nfkd if not unicodedata.combining(c)])
 
 
-def normalize_text(text : str) -> str: #                                      test
+def normalize_text(text : str) -> str: #                                      test        
     text = re.sub(r"\s+", " ", text.strip().strip('"').strip("'"))
     text = remove_accents(text)
     text = text.title()
@@ -196,18 +196,18 @@ def extract_province2(kv_anhhuong) -> str: #                                  te
     mat = re.search(r"tỉnh\s*([^\/\-$%@#!&\*].*)", kv_anhhuong, re.IGNORECASE)
     if mat:
         return normalize_text(mat.group(1))
-
+    
     mat = re.search(r"Tp\.*\s*(.*)", kv_anhhuong, re.IGNORECASE)
-    if mat:
+    if mat: 
         return normalize_text(mat.group(1))
-
+    
     mat = re.search(r"Thành Phố\s*(.*)", kv_anhhuong, re.IGNORECASE)
     if mat:
         return normalize_text(mat.group(1))
-
+    
     return normalize_text(kv_anhhuong)
 
-
+ 
 def dst_by_type(db : sqlite3.Cursor, prov : str, order : int):
     if prov == "vie":
         if order == 1:
@@ -265,15 +265,15 @@ def most_freq_dst(db : sqlite3.Cursor, prov : str):
         if not prov in provinces_and_east_Sea:
             raise KeyError
         db.execute('SELECT "type", "count" FROM (SELECT "type", COUNT("type") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type") WHERE ("count" = (SELECT MAX("count") FROM (SELECT COUNT("type") AS "count" FROM "disasters" WHERE "province" = ? GROUP BY "type")))', (prov, prov))
-
+    
     res = db.fetchall()
     return res
-
+        
 
 def dst_by_prov(db : sqlite3.Cursor, limit, order):
     if not (isinstance(limit, int) and order in [0,1]):
         raise ValueError
-
+    
     query = 'SELECT "province", COUNT("province") AS "count" FROM "disasters" GROUP BY "province"'
     if order == 1:
         query = query + ' ORDER BY "count" DESC'
@@ -281,7 +281,7 @@ def dst_by_prov(db : sqlite3.Cursor, limit, order):
         query = query + ' ORDER BY "count"'
     if limit != 0:
         query = query + ' LIMIT ' + str(limit)
-
+    
     db.execute(query)
     res = db.fetchall()
     return res
@@ -306,7 +306,7 @@ def disaster_trends(cnn : sqlite3.Connection, prov : str):
         ]
     if prov != "vie" and not normalize_text(prov) in provinces_and_east_Sea:
         raise KeyError
-
+    
     # plot for 5 most freq disaster
     # prepare data
     query=""
